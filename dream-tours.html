@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dream Tours | Apu Datta</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #1f2933;
+            color: white;
+            padding: 50px 25px;
+        }
+
+        .header-content {
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0 0 8px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d8dee4;
+            margin: 0 0 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 9px 18px;
+            border: 1px solid white;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-button:hover {
+            background: white;
+            color: #1f2933;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 45px 25px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin: 0 0 10px;
+        }
+
+        .section p {
+            margin-top: 0;
+        }
+
+        .technology {
+            font-weight: bold;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        .project-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px auto 0;
+            border: 1px solid #ddd;
+        }
+
+        .database-image {
+            max-width: 850px;
+        }
+
+        .image-caption {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin: 8px 0 0;
+        }
+
+        .bottom-navigation {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        .bottom-navigation .back-button {
+            background: #1f2933;
+            border-color: #1f2933;
+        }
+
+        .bottom-navigation .back-button:hover {
+            background: #ffffff;
+            color: #1f2933;
+        }
+
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 22px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        @media (max-width: 750px) {
+
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            .container {
+                padding: 35px 20px;
+            }
+
+            .section {
+                margin-bottom: 30px;
+            }
+
+            .section h2 {
+                font-size: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-content">
+
+        <h1>Dream Tours</h1>
+
+        <p>
+            Online Hotel Reservation Database
+        </p>
+
+        <a href="Resume.html" class="back-button">
+            ← BACK TO PORTFOLIO
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <section class="section">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            Dream Tours is a collaborative database project developed for an
+            online travel agency. The project focused on designing a relational
+            database to support hotel reservations and manage customers, hotels,
+            rooms, amenities, payments, reservations, and customer loyalty points.
+            The system was designed to streamline the process of searching,
+            booking, and managing hotel reservations.
+        </p>
+
+        <p class="technology">
+            SQL | MySQL | MySQL Workbench | Retool | Mockaroo | Database Modeling
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>My Contributions</h2>
+
+        <p>
+            Contributed to database modeling and design feedback, data-entry planning,
+            Retool interactive table development and code functionality, project
+            presentation materials, and the final report. I also collaborated with
+            the team on Mockaroo-generated test data and Retool implementation.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Database Design</h2>
+
+        <p>
+            The team developed a relational database structure covering customers,
+            accounts, hotels, rooms, reservations, payments, amenities, loyalty
+            points, and staff. The project included conceptual, logical, and
+            physical data models to define entities, relationships, primary keys,
+            and foreign keys.
+        </p>
+
+        <img src="database_model.png"
+             alt="Dream Tours relational database model"
+             class="project-image database-image">
+
+        <p class="image-caption">
+            Dream Tours relational database model developed in MySQL Workbench.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Database Implementation</h2>
+
+        <p>
+            The database was normalized through 1NF, 2NF, and 3NF to reduce
+            redundancy and improve data integrity. The design used decomposition
+            and junction tables to manage many-to-many relationships between
+            reservations and rooms, and between hotels and amenities.
+        </p>
+
+        <p>
+            The database was implemented in MySQL using SQL DDL and DML to create
+            tables, define primary and foreign key relationships, load test data
+            generated with Mockaroo, and perform database operations required by
+            the reservation system.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Retool Application</h2>
+
+        <p>
+            The MySQL database was integrated with Retool to create an interactive
+            interface for the reservation system. The application included
+            functionality for customer management, hotel search, reservation
+            creation and management, account creation, customer information
+            updates, and loyalty points tracking.
+        </p>
+
+        <img src="dream_tours_booking.png"
+             alt="Dream Tours Retool hotel search and reservation interface"
+             class="project-image">
+
+        <p class="image-caption">
+            Dream Tours hotel search and reservation interface developed using Retool.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Project Outcome</h2>
+
+        <p>
+            The project provided hands-on experience in relational database design,
+            SQL implementation, data normalization, test-data generation, and
+            integrating a MySQL database with a Retool application for a practical
+            hotel reservation system.
+        </p>
+
+    </section>
+
+
+    <div class="bottom-navigation">
+
+        <a href="Resume.html" class="back-button">
+            ← BACK TO PORTFOLIO
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+    © 2026 Apu Datta
+</footer>
+
+
+</body>
+
+</html>
